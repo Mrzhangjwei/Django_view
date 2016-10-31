@@ -3,7 +3,7 @@
  
   运行成功如下图所示：(这个时候你在网站上输入http://127.0.0.1:8000/或者http://localhost:8000/就可进入到Django编译显示结果的界面了。)
   
- ![这里写图片描述](http://img.blog.csdn.net/20161031161139440)
+ ![这里写图片描述](./img/1.jpg)
 # 视图和URL配置
  使用Django，你会用不同的方法来说明这两件事 页面的内容是靠view function（视图函数） 来产生，URL定义在 URLconf 中。首先，我们先写一个Hello World视图函数。
 ### 第一份视图：
@@ -65,7 +65,7 @@ urlpatterns = patterns('',
 自己进行了简单的练习和操作：
 
  如果要调用templates方法，一定要记住把settings.py文件中‘DIRS’项加上：['templates']，如下图：
- ![TEMPLATES的设置](http://img.blog.csdn.net/20161031170303776)
+ ![TEMPLATES的设置](./img/2.jpg)
 
 ```
 from django.conf.urls import *
@@ -140,7 +140,7 @@ def name(request):
 
  **注意：引入或者创建html文件，应该在/django/website目录下创建一个文件夹templates，然后在这个文件中建立你的html页面，目录如下图：**
 
- ![文件目录](http://img.blog.csdn.net/20161031163940064)
+ ![文件目录](./img/3.jpg)
 
 ### 关于网站根目录的快速参考
  尽管匹配网站根目录的URL模式不能想象，但是还是值得提一下的. 当为网站根目录实现一个视图，你需要使用URL模式`` ‘^$’`` , 它代表一个空字符串。 例如:
